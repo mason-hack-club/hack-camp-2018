@@ -141,8 +141,6 @@ Navigation
 	padding: 20px;
 	margin-top: 30px;
 	text-align: center;
-	display: inline-block;
-  vertical-align: top;
 }
 .feature span {
 	font-size: 5em;
@@ -157,6 +155,8 @@ Navigation
 	/* margin-right: 20px; */
 	border: 3px solid #f6f6f6;
 	border-radius: 5px;
+	display: inline-block;
+  vertical-align: top;
 }
 .leader .feature:hover {
 	box-shadow: 3px 3px 10px #ccc;
@@ -179,15 +179,15 @@ a span.ti-twitter-alt {
 	color: #4099ff;
 }
 
-.tickets {
+.register {
 	background-color: #fcd93b;
 }
-.tickets .price {
+.register .time {
 	font-size: 4em;
 	color: #dd5138;
 	font-weight: 100;
 }
-.tickets .price sup {
+.register .time sup {
 	font-size: 0.4em;
 }
 
