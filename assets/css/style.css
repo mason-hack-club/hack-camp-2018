@@ -140,6 +140,9 @@ Navigation
 .feature {
 	padding: 20px;
 	margin-top: 30px;
+	text-align: center;
+	display: inline-block;
+  vertical-align: top;
 }
 .feature span {
 	font-size: 5em;
@@ -151,7 +154,7 @@ Navigation
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-	margin-right: 20px;
+	/* margin-right: 20px; */
 	border: 3px solid #f6f6f6;
 	border-radius: 5px;
 }
@@ -320,8 +323,8 @@ Custom Media Queries
 		text-align: center;
 	}
 	.leader .feature {
-		width: 49%;
-		margin-right: 7px;
+		width: 47%;
+		/* margin-right: 7px; */
 	}
 	ul.footer-menu {
 		margin-top: 0;
@@ -333,7 +336,7 @@ Custom Media Queries
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.leader .feature {
-		width: 49%;
-		margin-right: 9px;
+		width: 47%;
+		/* margin-right: 9px; */
 	}
 }
