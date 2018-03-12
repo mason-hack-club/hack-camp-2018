@@ -1,11 +1,13 @@
 body {
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #404142;
 	font-size: 16px;
 	letter-spacing: 0.8px;
+	font-weight: 400;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 200;
+	/* font-weight: 200; */
+	font-family: 'Fredoka One', cursive;
 }
 ul {
 	margin: 0;
@@ -16,9 +18,15 @@ a {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	color: #F96C41 !important;
 }
 a:hover, a:focus, a:active, a:visited {
 	text-decoration: none;
+}
+.color-bg {
+	background-color: #2FD5A9;
+	color: #fff;
+	font-weight: 600;
 }
 
 /* Buttons override */
@@ -33,19 +41,16 @@ a:hover, a:focus, a:active, a:visited {
 	border-radius: 4px;
 }
 .btn-red {
-	background-color: #dd5138;
-	color: #fff;
-}
-.btn-yellow {
-	background-color: #fcd93b;
-	color: #2a2a2a;
-	opacity: 0.8;
-}
-.btn-yellow:hover {
+	background-color: #F96C41;
+	color: #fff !important;
 	opacity: 1;
 }
-.btn-yellow.disabled:hover,
-.btn-yellow[disabled]:hover {
+
+.btn-red:hover {
+opacity: 0.8;
+}
+.btn-red.disabled:hover,
+.btn-red[disabled]:hover {
 	opacity: 0.65;
 }
 .content-ct {
@@ -75,9 +80,9 @@ Navigation
 	margin-right: 10px;
 	text-transform: uppercase;
 	font-size: 12px;
-	background-color: #dd5138;
+	background-color: #F96C41;
 	padding: 3px 10px;
-	font-weight: 600;
+	/* font-weight: 600; */
 	border-radius: 3px;
 	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
 	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
@@ -94,7 +99,7 @@ Navigation
 }
 .side-menu ul li a span.dot {
 	position: relative;
-	background-color: #dd5138;
+	background-color: #F96C41;
 	border-radius: 2em;
 	height: 10px;
 	width: 10px;
@@ -108,16 +113,18 @@ Navigation
 
 
 .hero-header {
-	background: #016cc7;
 	min-height: 600px;
 	padding: 5em;
-	color: #fff;
 }
 .hero-header h1 {
 	margin: 1em 0 0 0;
 }
+.hero-header h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
 .hero-header h4 {
-	font-weight: normal;
+	/* font-weight: normal; */
 	opacity: 0.6;
 	letter-spacing: 1px;
 	margin: 2em 0;
@@ -135,16 +142,26 @@ Navigation
 	padding: 30px 0;
 }
 .row-title {
-	font-weight: 400;
+	/* font-weight: 400; */
 }
+.faq-row {
+	text-align: justify;
+}
+
 .feature {
 	padding: 20px;
 	margin-top: 30px;
+	font-weight: 400;
 	text-align: center;
+	color: #404142;
+	background-color: #fff;
+}
+.feature p {
+	text-align: left;
 }
 .feature span {
 	font-size: 5em;
-	color: #016cc7;
+	color: #2FD5A9;
 }
 
 .leader .feature {
@@ -172,20 +189,14 @@ ul.leader-social li {
 	display: inline-block;
 	margin: 10px 5px;
 }
-a span.ti-facebook {
-	color: #3b5998;
-}
-a span.ti-twitter-alt {
-	color: #4099ff;
-}
 
 .register {
-	background-color: #fcd93b;
+	font-weight: 600;
 }
 .register .time {
 	font-size: 4em;
-	color: #dd5138;
-	font-weight: 100;
+	color: #F96C41;
+	/* font-weight: 100; */
 }
 .register .time sup {
 	font-size: 0.4em;
@@ -194,6 +205,7 @@ a span.ti-twitter-alt {
 
 .nav-tabs {
 	margin-top: 20px;
+	font-family: 'Fredoka One', cursive;
 }
 .schedule .media {
 	margin-top: 4em;
@@ -202,13 +214,13 @@ a span.ti-twitter-alt {
 	max-width: 100px;
 }
 .schedule .media-heading {
-	font-weight: 600;
+	/* font-weight: 600; */
 	border-bottom: 2px solid #efefef;
 	padding-bottom: 10px;
 }
 .schedule .media-body h5 {
 	text-transform: uppercase;
-	font-weight: 600;
+	/* font-weight: 600; */
 }
 
 
@@ -223,6 +235,9 @@ a span.ti-twitter-alt {
 .footer-credit {
 	padding: 40px;
 }
+.footer-right {
+	text-align: right;
+}
 ul.footer-menu {
 	text-align: right;
 }
@@ -231,11 +246,11 @@ ul.footer-menu li {
 }
 ul.footer-menu li a {
 	font-size: 12px;
-	color: #fcd93b;
+	color: #2FD5A9;
 	padding-right: 20px;
 }
 ul.footer-menu li a:hover {
-	color: #dd5138;
+	color: #F96C41;
 }
 
 
@@ -315,9 +330,15 @@ Custom Media Queries
 	.leader .feature {
 		width: 100%
 	}
+	.side-menu {
+		display: none;
+	}
 	.footer-credit {
 		text-align: center;
 		padding: 40px 20px;
+	}
+	.footer-right {
+		text-align: center;
 	}
 	ul.footer-menu {
 		text-align: center;
@@ -339,6 +360,9 @@ Custom Media Queries
 	}
 	ul.footer-menu {
 		margin-top: 0;
+	}
+	.side-menu {
+		display: none;
 	}
 }
 
