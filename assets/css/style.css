@@ -464,6 +464,10 @@ Custom Media Queries
 		margin-left: 10px;
 	}
 
+	.summary .right {
+		text-align: left;
+	}
+
 }
 
 
