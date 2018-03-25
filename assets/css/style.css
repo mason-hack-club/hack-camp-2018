@@ -158,17 +158,13 @@ Navigation
 	margin-bottom: 20px;
 }
 
-.summary img {
-	width: 100%;
-	max-width: 400px;
-}
-
 .summary h2 {
 	margin-top: 0;
 }
 
-.summary .right {
-	text-align: right;
+.summary .full {
+	width: 400px;
+	max-width: 100%;
 }
 
 .feature {
@@ -206,6 +202,7 @@ Navigation
 	max-width: 40%;
 	border: 4px solid #efefef;
 	border-radius: 50%;
+	margin: 0 auto;
 }
 ul.leader-social li {
 	list-style: none;
@@ -456,16 +453,9 @@ Custom Media Queries
 		margin-top: 30px;
 	}
 
-	.float-left {
-		margin-right: 10px;
-	}
-
-	.float-right {
-		margin-left: 10px;
-	}
-
-	.summary .right {
-		text-align: left;
+	.float-left, .float-right {
+		margin: 10px 0;
+		width: 100% !important;
 	}
 
 }
