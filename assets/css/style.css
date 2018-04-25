@@ -1,10 +1,8 @@
 body {
-	font-family: 'Raleway', sans-serif;
-	color: #404142;
 	font-size: 16px;
-	letter-spacing: 0.8px;
-	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	/* font-weight: 200; */
 	font-family: 'Fredoka One', cursive;
@@ -22,6 +20,10 @@ a {
 }
 a:hover, a:focus, a:active, a:visited {
 	text-decoration: none;
+}
+
+.featuretext {
+	min-height: 8em !important;
 }
 .color-bg {
 	background-color: #19D1D6;
@@ -183,7 +185,7 @@ Navigation
 	color: #19D1D6;
 }
 
-.leader .feature {
+.feature {
 	width: 31.333333%;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -194,7 +196,12 @@ Navigation
 	display: inline-block;
   vertical-align: top;
 }
-.leader .feature:hover {
+
+.feature-2 {
+	width: 47.9999996%;
+}
+
+.feature:hover {
 	box-shadow: 3px 3px 10px #ccc;
 	transform: translateY(-10px);
 }
@@ -210,13 +217,10 @@ ul.leader-social li {
 	margin: 10px 5px;
 }
 
-.register {
-	font-weight: 600;
-}
 .register .time {
 	font-size: 4em;
 	color: #EB726D;
-	font-weight: 600;
+	font-family: 'Fredoka One', cursive;
 }
 .register .time sup {
 	font-size: 0.4em;
@@ -435,7 +439,7 @@ Custom Media Queries
 		text-align: center;
 		max-height: 550px;
 	}
-	.leader .feature {
+	.feature {
 		width: 100%
 	}
 	.side-menu {
@@ -468,7 +472,7 @@ Custom Media Queries
 		padding: 3em 1em 1em 1em;
 		text-align: center;
 	}
-	.leader .feature {
+	.feature {
 		width: 47%;
 		/* margin-right: 7px; */
 	}
@@ -484,7 +488,7 @@ Custom Media Queries
 /* iPad Landscape */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-	.leader .feature {
+	.feature {
 		width: 47%;
 		/* margin-right: 9px; */
 	}
