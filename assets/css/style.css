@@ -499,3 +499,7 @@ Custom Media Queries
 		/* margin-right: 9px; */
 	}
 }
+
+.smaller {
+	height: 400px !important;
+}
