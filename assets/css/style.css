@@ -501,5 +501,5 @@ Custom Media Queries
 }
 
 .smaller {
-	height: 400px !important;
+	min-height: 400px !important;
 }
